@@ -1,0 +1,5 @@
+# Dynaconf configuration secrets
+config/.secrets.toml
+config/.app-context
+config/.env
+

@@ -1,0 +1,29 @@
+[default]
+DEBUG = true
+SERVER = "faceid.paypalcorp.com"
+DB_HOST = "10.238.88.125:3306"
+DB_SCHEMA = "ppil"
+DB_CHARSET = "utf8mb4"
+JWT_ALGORITHM = "HS512"
+JWT_REFRESH_TOKEN_EXPIRES = false
+JWT_IDENTITY_CLAIM = "sub"
+JWT_CLAIMS_IN_REFRESH_TOKEN = true
+JWT_BLACKLIST_ENABLED = true
+JWT_BLACKLIST_TOKEN_CHECKS = ["refresh"]
+JWT_USER_CLAIMS = 'app_name'
+FACE_THRESHOLD = 0.55
+
+[development]
+DEBUG = true
+DB_HOST = "localhost:3306"
+
+
+[production]
+DEBUG = false
+SERVER = "faceid.paypalcorp.com"
+DB_HOST = "faceid-db.paypalcorp.com:2312"
+
+
+[qa]
+DEBUG = true
+DB_HOST = "10.238.88.125:3306"

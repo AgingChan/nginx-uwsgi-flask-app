@@ -2,14 +2,15 @@ version: "3.2"
 
 services:
   faceid:
+    image: faceid
     build: ./
     deploy:
-      replicas: 2
+      replicas: 1
     environment:
       LISTEN_PORT: 443
     volumes:
-      - "./config:/config"
-      - "./certs:/certs"
+      - ./config:/config
+      - ./certs:/certs
     networks:
       - outside
 #    secrets:
@@ -26,3 +27,4 @@ networks:
   outside:
     external:
       name: "host"
+

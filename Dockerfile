@@ -58,4 +58,3 @@ RUN BUILD_PACKAGES="\
         /var/cache/apt/*.bin
 
 ENV ROOT_PATH_FOR_DYNACONF "/config"
-ENV LISTEN_PORT 443

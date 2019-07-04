@@ -4,10 +4,9 @@ FROM tiangolo/uwsgi-nginx-flask:python3.6
 
 RUN BUILD_PACKAGES="\
         build-essential \
+        apt-utils \
         " \
     APT_PACKAGES="\
-        nginx \
-        uwsgi \
         vim " \
     PIP_PACKAGES="\
         Flask>=1.0.2 \
@@ -42,7 +41,7 @@ RUN BUILD_PACKAGES="\
 # pytorch
 # ------------------------------------------------------------------
     && PIP_INSTALL="python -m pip --no-cache-dir install --upgrade" \
-    && $PIP_INSTALL http://download.pytorch.org/whl/cpu/torch-0.4.0-cp36-cp36m-linux_x86_64.whl \
+    && $PIP_INSTALL http://download.pytorch.org/whl/cpu/torch-0.4.1-cp36-cp36m-linux_x86_64.whl \
         ${PIP_PACKAGES}  \ 
 # ==================================================================
 # config & cleanup

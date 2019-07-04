@@ -11,6 +11,7 @@ services:
     volumes:
       - ./config:/config
       - ./certs:/certs
+      - ./src:/app
     networks:
       - outside
 #    secrets:

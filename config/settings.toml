@@ -1,5 +1,5 @@
 [default]
-DEBUG = true
+DEBUG = false
 SERVER = "faceid.paypalcorp.com"
 DB_HOST = "10.238.88.125:3306"
 DB_SCHEMA = "ppil"
@@ -14,7 +14,7 @@ JWT_USER_CLAIMS = 'app_name'
 FACE_THRESHOLD = 0.55
 
 [development]
-DEBUG = true
+DEBUG = false
 DB_HOST = "localhost:3306"
 
 
@@ -25,5 +25,5 @@ DB_HOST = "faceid-db.paypalcorp.com:2312"
 
 
 [qa]
-DEBUG = true
+DEBUG = false
 DB_HOST = "10.238.88.125:3306"

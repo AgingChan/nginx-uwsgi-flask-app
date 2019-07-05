@@ -3,3 +3,5 @@ config/.secrets.toml
 config/.app-context
 config/.env
 
+.idea/*
+src/app/*
